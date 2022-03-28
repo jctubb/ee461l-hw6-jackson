@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from flask.helpers import send_from_directory
-from flask_cors import CORS
+#from flask_cors import CORS
 
 
 # uses 'frontend' because that is where our react app is stored
@@ -8,7 +8,7 @@ app = Flask(__name__, static_folder="client/build", static_url_path="")
 
 
 # and comment out
-CORS(app)
+#CORS(app)
 
 # this method returns the opposite of the current state of the button
 # this would look different for your own personal app
@@ -36,4 +36,4 @@ names = {
     "John": "Doe",
     "Bruce": "Wayne",
     "Peter": "Parker"
-}\
+}
